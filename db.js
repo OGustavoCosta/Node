@@ -1,5 +1,4 @@
 import 'dotenv/config';
-import postgres from 'postgres';
 import { neon } from '@neondatabase/serverless';
 
 // Conexão direta (substitua `process.env.DATABASE_URL` pelo valor correto, se necessário)

@@ -1,0 +1,37 @@
+POST http://localhost:3333/videos
+Content-type: application/json
+
+{
+    "title": "Qpeg",
+    "description": "não pergunte sobre",
+    "duration": 180
+}
+
+###
+POST http://localhost:3333/videos
+Content-type: application/json
+
+{
+    "title": "node",
+    "description": "sobre node.js",
+    "duration": 180
+}
+
+###
+GET http://localhost:3333/videos
+
+###
+GET http://localhost:3333/videos?search=node
+
+###
+PUT http://localhost:3333/videos/1e41f13c-705e-4275-9c93-b6485307ad8b
+Content-type: application/json
+
+{
+    "title": "Qpeg",
+    "description": "Quem perguntar é gay (eu avisei)",
+    "duration": 180
+}
+
+###
+DELETE http://localhost:3333/videos/1e41f13c-705e-4275-9c93-b6485307ad8b
